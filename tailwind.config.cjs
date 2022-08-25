@@ -10,6 +10,7 @@ module.exports = {
       sm: "540px",
       md: "768px",
       lg: "1110px",
+      xl: "1440px",
     },
     colors: {
       white: "hsl(0, 0%, 100%)",

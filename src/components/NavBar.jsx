@@ -10,9 +10,9 @@ const Navbar = () => {
       <div>
         <img src={Logo} alt="logo" />
       </div>
-      <span className=" w-[280px] h-[1px] bg-white absolute top-1/2 left-[8.5rem] z-50 hidden lg:block"></span>
+      <span className=" w-[300px] h-[1px] bg-white absolute top-1/2 left-[8.5rem] z-50 hidden lg:block xl:w-[473px]"></span>
       {/* desktop nav, tablet nav */}
-      <div className="hidden md:flex h-full lg:items-center justify-between  md:px-11  relative bg-white/5 backdrop-blur-sm">
+      <div className="hidden md:flex h-full md:items-center justify-between  md:px-11  relative bg-white/5 backdrop-blur-sm">
         <ul className="flex items-center lg:justify-center md:space-x-9 lg:space-x-12 w-full lg:pl-[118px] lg:pr-[165px]">
           <CustomLink num={"00"} to={"/"}>
             Home
