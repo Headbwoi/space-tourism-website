@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.show {
+  animation: showam 500ms ease-in-out forwards;
+}
+.close {
+  animation: closeam 500ms ease-in-out forwards;
+}
+
+@keyframes showam {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes closeam {
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
