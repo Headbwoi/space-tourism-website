@@ -8,8 +8,14 @@
 .show {
   animation: showam 500ms ease-in-out forwards;
 }
+
 .close {
   animation: closeam 500ms ease-in-out forwards;
+}
+@keyframes popup {
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes showam {
@@ -26,12 +32,16 @@
 }
 
 .link {
-  @apply text-sm lg:text-base text-white uppercase tracking-wide relative after:absolute after:block after:-bottom-4 md:after:-bottom-9 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500;
+  @apply text-sm lg:text-base text-white uppercase tracking-wide relative after:absolute after:block after:-bottom-4 md:after:-bottom-9 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500 font-barlow;
 }
 .link.active {
   @apply after:bg-white after:opacity-100 text-white after:scale-100;
 }
 
 .mobile-link {
-  @apply block text-sm lg:text-base text-white uppercase tracking-wide mb-8;
+  @apply block text-sm lg:text-base text-white uppercase tracking-wide mb-8 font-barlow;
+}
+
+.explore:hover span {
+  opacity: 1;
 }
