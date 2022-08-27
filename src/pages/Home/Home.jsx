@@ -4,7 +4,7 @@ import Navbar from "../../components/NavBar"
 const Home = () => {
   return (
     <div
-      className={`pt-6 lg:pt-10 min-h-screen bg-[url("/home/background-home-mobile.jpg")] md:bg-[url("/home/background-home-tablet.jpg")] lg:bg-[url("/home/background-home-desktop.jpg")]  bg-no-repeat bg-cover overflow-x-hidden h-[41.6875rem] md:h-[64rem] lg:h-[56.25rem] `}
+      className={`pt-6 lg:pt-10 min-h-screen bg-[url("/assets/home/background-home-mobile.jpg")] md:bg-[url("/assets/home/background-home-tablet.jpg")] lg:bg-[url("/assets/home/background-home-desktop.jpg")]  bg-no-repeat bg-cover h-[41.6875rem] md:h-[64rem] lg:h-[56.25rem] `}
     >
       <Navbar />
       <div className="container flex items-center justify-center lg:justify-between flex-col lg:flex-row px-6 md:px-o mt-12 md:mt-[6.625rem] lg:mt-[15.6875rem] ">

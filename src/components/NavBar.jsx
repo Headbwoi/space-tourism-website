@@ -74,7 +74,7 @@ function MobileMenu() {
     <div
       className={`md:hidden fixed w-[70%] bg-darkBlue/75 backdrop-blur-lg right-0 bottom-0 h-full ${
         open ? "show" : "close"
-      } opacity-0 translate-x-full duration-300`}
+      } opacity-0 translate-x-full z-40 duration-300`}
     >
       <ul className="flex items-start justify-center flex-col absolute top-[160px] left-7">
         <CustomLinkMobile num={"00"} to={"/"}>
