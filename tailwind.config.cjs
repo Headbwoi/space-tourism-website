@@ -31,7 +31,7 @@ module.exports = {
         head_xs: [
           "1.75rem",
           {
-            letterSpacing: "1.17em",
+            letterSpacing: "4.72px",
           },
         ],
         head_md: "3.5rem",

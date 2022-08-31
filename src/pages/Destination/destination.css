@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.destination-home {
+  @apply pt-6 lg:pt-10 h-[53.125rem] md:h-[64rem] lg:h-[56.25rem] bg-[url(/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/destination/background-destination-desktop.jpg)] bg-no-repeat bg-cover;
+}
+.dest-heading {
+  @apply font-barlow text-base md:text-xl lg:text-head_xs uppercase text-white mb-8 md:mb-[3.75rem] lg:mb-[4.375rem];
+}
+
+.dest-heading-span {
+  @apply mr-7 font-bold tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] opacity-25;
+}
+.dest-image {
+  @apply w-[10.625rem] h-[10.625rem] md:w-[18.75rem] md:h-[18.75rem] lg:w-[27.8125rem] lg:h-[27.8125rem] mb-7 md:mb-14 lg:mb-0 mx-auto select-none;
+}
+
+.dest-dest {
+  @apply uppercase font-barlow text-sm tracking-[2.36px] md:text-base md:tracking-[2.7px] text-white cursor-pointer relative after:absolute after:block after:-bottom-2 md:after:-bottom-3 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500;
+}
+.dest-dest.active {
+  @apply after:bg-white after:opacity-100 after:scale-100;
+}
