@@ -1,10 +1,11 @@
+import "./crew.css"
 import Navbar from "../../components/NavBar"
 
 const Crew = () => {
   return (
-    <main>
+    <section className="crew-home">
       <Navbar />
-    </main>
+    </section>
   )
 }
 

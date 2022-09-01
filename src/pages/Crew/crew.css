@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.crew-home {
+  @apply pt-6 lg:pt-10 h-[44.375rem] md:h-[64rem] lg:h-[56.25rem] bg-[url(/assets/crew/background-crew-mobile.jpg)] md:bg-[url(/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/crew/background-crew-desktop.jpg)] bg-no-repeat bg-cover;
+}
