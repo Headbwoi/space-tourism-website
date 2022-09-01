@@ -99,7 +99,7 @@ const Destination = ({ destination }) => {
               <div className="dest-distance">
                 {/* avg distance */}
                 <div className="block text-center lg:text-left h-[3.8125rem] w-[13.5rem] space-y-3">
-                  <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlow">
+                  <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlowCondensed">
                     avg. distance
                   </p>
                   <p className="text-white uppercase font-belle text-[1.75rem]">
@@ -108,7 +108,7 @@ const Destination = ({ destination }) => {
                 </div>
                 {/* travel time */}
                 <div className="block text-center lg:text-left h-[3.8125rem] w-[13.5rem] space-y-3">
-                  <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlow">
+                  <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlowCondensed">
                     est. travel time
                   </p>
                   <p className="text-white uppercase font-belle text-[1.75rem]">

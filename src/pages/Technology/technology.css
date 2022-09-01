@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tech-home {
+  @apply pt-6 lg:pt-10 h-[44.375rem] md:min-h-[64rem] lg:min-h-[56.25rem] bg-darkBlue bg-[url(/assets/technology/background-technology-mobile.jpg)] md:bg-[url(/assets/technology/background-technology-tablet.jpg)] lg:bg-[url(/assets/technology/background-technology-desktop.jpg)] bg-no-repeat bg-cover;
+}
+.tech-container {
+  @apply w-full flex items-center justify-center flex-col lg:flex-row-reverse lg:justify-end lg:pl-[10.25rem];
+}
+
+.tech-image {
+  @apply mb-8 md:mb-14 lg:mb-0 w-full lg:h-[32.9375rem] lg:w-[32.1875rem];
+}
+
+.tech-text {
+  @apply flex items-center lg:items-start justify-center flex-col lg:flex-row lg:space-x-20 px-6 lg:px-0  lg:mr-[130px];
+}
+.tech-text-toggle {
+  @apply flex items-center justify-center lg:flex-col space-x-4 lg:space-x-0 lg:space-y-8 mb-6 md:mb-11 lg:mb-0;
+}
+.tech-tech {
+  @apply grid place-items-center h-10 w-10 md:h-[3.75rem] md:w-[3.75rem] lg:h-20 lg:w-20 rounded-full border border-gray hover:border-white text-white  cursor-pointer text-base md:text-2xl md:leading-[1.5px]  lg:text-[2rem] lg:leading-[2px] font-belle;
+}
+.tech-tech.active {
+  @apply bg-white text-darkBlue;
+}
+.tech-text-text {
+  @apply text-center lg:text-left h-[13.75rem] md:h-[14.8125rem] md:w-[28.625rem] lg:h-[18.9375rem] lg:w-[29.375rem];
+}
+.tech-text-text .terminology {
+  @apply uppercase text-sm md:text-base text-lightBlue font-barlowCondensed mb-6;
+}
+.tech-text-text .name {
+  @apply text-2xl md:text-[2.5rem] lg:text-head_md uppercase text-white font-belle mb-10;
+}
+.tech-text-text .description {
+  @apply text-lightBlue text-sm md:text-base md:leading-7 lg:text-lg lg:leading-8 font-barlow lg:w-[26.75rem];
+}

@@ -28,5 +28,5 @@
   @apply font-belle text-white text-2xl md:text-[40px] lg:text-head_md uppercase mb-7 lg:mb-10;
 }
 .crew-bio {
-  @apply text-lightBlue text-base md:leading-7 lg:text-xl lg:leading-8 md:mb-10 lg:mb-[7.5rem] lg:w-[30.5rem];
+  @apply text-lightBlue text-base md:leading-7 lg:text-xl lg:leading-8 md:mb-10 lg:mb-[7.5rem] lg:w-[30.5rem] font-barlow;
 }

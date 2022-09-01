@@ -40,7 +40,8 @@ module.exports = {
         head_xl: "9.375rem",
       },
       fontFamily: {
-        barlow: [`"Barlow Condensed", sans-serif`],
+        barlow: [`"Barlow", sans-serif`],
+        barlowCondensed: [`"Barlow Condensed", sans-serif`],
         belle: [`"Bellefair", serif`],
       },
     },

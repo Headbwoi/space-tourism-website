@@ -14,7 +14,7 @@
 }
 
 .dest-dest {
-  @apply uppercase font-barlow text-sm tracking-[2.36px] md:text-base md:tracking-[2.7px] text-lightBlue cursor-pointer relative after:absolute after:block after:-bottom-2 md:after:-bottom-3 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500;
+  @apply uppercase font-barlowCondensed text-sm tracking-[2.36px] md:text-base md:tracking-[2.7px] text-lightBlue cursor-pointer relative after:absolute after:block after:-bottom-2 md:after:-bottom-3 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500;
 }
 .dest-dest.active {
   @apply after:bg-white after:opacity-100 after:scale-100;
