@@ -21,7 +21,7 @@
   opacity: 1;
 }
 .spin {
-  animation: spin 10s ease-in-out infinite;
+  animation: spin 15s linear infinite;
 }
 
 @keyframes spin {
