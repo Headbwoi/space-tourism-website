@@ -42,8 +42,6 @@ const Destination = ({ destination }) => {
     <section className=" destination-home ">
       <Navbar />
       <div className="dest-container">
-        
-
         {/* flex */}
         <div className="flex items-center justify-center flex-col lg:flex-row lg:space-x-[9.75rem]">
           {/* image */}
