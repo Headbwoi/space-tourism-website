@@ -20,7 +20,7 @@
   @apply after:bg-white after:opacity-100 after:scale-100;
 }
 .dest-article {
-  @apply text-lightBlue text-[0.9375rem] leading-[25px] md:text-base md:leading-7 lg:text-lg lg:leading-8 font-barlow w-[27.75rem] mb-8 md:mb-12
+  @apply text-lightBlue text-[0.9375rem] leading-[25px] md:text-base md:leading-7 lg:text-lg lg:leading-8 font-barlow mb-8 md:mb-12
   lg:mb-[3.375rem];
 }
 .dest-line {

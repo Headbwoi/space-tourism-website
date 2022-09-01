@@ -1,6 +1,7 @@
 import "./destination.css"
 import Navbar from "../../components/NavBar"
 import { useState } from "react"
+import Header from "../../components/Header"
 
 const Destination = ({ destination }) => {
   const [index, setIndex] = useState(0)
@@ -26,8 +27,8 @@ const Destination = ({ destination }) => {
     }
     const btns = document.querySelectorAll(".dest-dest")
     const removeActiveClass = () => {
-      btns.forEach((btn) => {
-        btn.classList.remove("active")
+      btns.forEach((button) => {
+        button.classList.remove("active")
       })
     }
     btns.forEach((btn) => {
@@ -42,6 +43,7 @@ const Destination = ({ destination }) => {
     <section className=" destination-home ">
       <Navbar />
       <div className="dest-container">
+        <Header num="01" text="pick your destination" />
         {/* flex */}
         <div className="flex items-center justify-center flex-col lg:flex-row lg:space-x-[9.75rem]">
           {/* image */}
