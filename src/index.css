@@ -2,36 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.show {
-  animation: showam 500ms ease-in-out forwards;
-}
-
-.close {
-  animation: closeam 500ms ease-in-out forwards;
-}
-@keyframes popup {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes showam {
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes closeam {
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-}
 
 .link {
   @apply text-sm lg:text-base text-white uppercase tracking-wide relative after:absolute after:block after:-bottom-4 md:after:-bottom-9 after:w-full after:h-[3px] after:bg-gray h-full after:opacity-0 after:scale-0 hover:after:opacity-100 hover:after:scale-100 after:duration-500 font-barlow;
@@ -46,4 +19,13 @@
 
 .explore:hover span {
   opacity: 1;
+}
+.spin {
+  animation: spin 10s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

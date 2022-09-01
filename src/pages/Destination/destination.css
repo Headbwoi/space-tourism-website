@@ -29,3 +29,16 @@
 .dest-distance {
   @apply text-center lg:text-left flex items-center justify-center lg:justify-start flex-col md:flex-row space-y-8 md:space-y-0;
 }
+.fade-in {
+  animation: fadein 500ms ease-in-out;
+}
+@keyframes fedein {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -2,6 +2,7 @@ import "./technology.css"
 import Navbar from "../../components/NavBar"
 import Header from "../../components/Header"
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 
 const Technology = ({ tech }) => {
   const [index, setIndex] = useState(0)
@@ -40,7 +41,11 @@ const Technology = ({ tech }) => {
 
       <div className="tech-container">
         {/* image */}
-        <div className="tech-image">
+        <motion.div
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="tech-image"
+        >
           <img
             src={`${
               screenSize > 1110 ? data.images.portrait : data.images.landscape
@@ -48,10 +53,14 @@ const Technology = ({ tech }) => {
             alt={`${data.name} image`}
             className="w-full h-full object-contain"
           />
-        </div>
+        </motion.div>
         {/* text */}
         <div className="tech-text">
-          <div className="tech-text-toggle">
+          <motion.div
+            whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="tech-text-toggle"
+          >
             <span className="tech-tech active" onClick={() => setIndex(0)}>
               1
             </span>
@@ -61,13 +70,17 @@ const Technology = ({ tech }) => {
             <span className="tech-tech" onClick={() => setIndex(2)}>
               3
             </span>
-          </div>
+          </motion.div>
 
-          <div className="tech-text-text">
+          <motion.div
+            whileInView={{ x: [100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="tech-text-text"
+          >
             <h2 className="terminology">the terminology...</h2>
             <h3 className="name">{data.name}</h3>
             <p className="description">{data.description}</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

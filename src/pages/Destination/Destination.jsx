@@ -2,6 +2,7 @@ import "./destination.css"
 import Navbar from "../../components/NavBar"
 import { useState } from "react"
 import Header from "../../components/Header"
+import { motion } from "framer-motion"
 
 const Destination = ({ destination }) => {
   const [index, setIndex] = useState(0)
@@ -47,16 +48,22 @@ const Destination = ({ destination }) => {
         {/* flex */}
         <div className="flex items-center justify-center flex-col lg:flex-row lg:space-x-[9.75rem]">
           {/* image */}
-          <img
+          <motion.img
             src={data.images.png}
             alt={`${data.name} image`}
-            className="dest-image"
+            className="dest-image fade-in"
+            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.6 }}
           />
 
           {/* slideshow and text */}
           <div className="lg:w-[27.8125rem] lg:h-[29.5rem] ">
             {/* slider/switcher/toggle */}
-            <div className="flex items-center justify-center lg:justify-start space-x-7 md:space-x-9 mb-5 md:mb-9 ">
+            <motion.div
+              whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="flex items-center justify-center lg:justify-start space-x-7 md:space-x-9 mb-5 md:mb-9 "
+            >
               <span
                 className="dest-dest active"
                 aria-label="see moon info"
@@ -85,27 +92,40 @@ const Destination = ({ destination }) => {
               >
                 titan
               </span>
-            </div>
+            </motion.div>
             {/* text */}
             <div className="text-center lg:text-left">
               {/* heading */}
-              <h2 className="text-white text-head_md md:text-[5rem] lg:text-head_lg font-belle uppercase">
+              <motion.h2
+                className="text-white text-head_md md:text-[5rem] lg:text-head_lg font-belle uppercase"
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+              >
                 {data.name}
-              </h2>
+              </motion.h2>
 
-              <article className="dest-article">{data.description}</article>
+              <motion.article
+                whileInView={{ x: [100, 0], opacity: [0, 1] }}
+                className="dest-article"
+              >
+                {data.description}
+              </motion.article>
               <span className="dest-line"></span>
               {/* distance */}
               <div className="dest-distance">
                 {/* avg distance */}
-                <div className="block text-center lg:text-left h-[3.8125rem] w-[13.5rem] space-y-3">
+                <motion.div
+                  whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="block text-center lg:text-left h-[3.8125rem] w-[13.5rem] space-y-3"
+                >
                   <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlowCondensed">
                     avg. distance
                   </p>
                   <p className="text-white uppercase font-belle text-[1.75rem]">
                     {data.distance}
                   </p>
-                </div>
+                </motion.div>
                 {/* travel time */}
                 <div className="block text-center lg:text-left h-[3.8125rem] w-[13.5rem] space-y-3">
                   <p className="text-lightBlue uppercase text-sm tracking-[2.36px] font-barlowCondensed">
@@ -115,7 +135,6 @@ const Destination = ({ destination }) => {
                     {data.travel}
                   </p>
                 </div>
-                <div></div>
               </div>
             </div>
           </div>
