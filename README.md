@@ -25,8 +25,11 @@ Users should be able to:
 ### Screenshots
 
 ![screenshot-home](screenshot/screenshot-home.png)
+
 ![screenshot-destination](screenshot/screenshot-destination.png)
+
 ![screenshoy-crew](screenshot/screenshot-crew.png)
+
 ![screensgot-technology](screenshot/screenshot-technology.png)
 
 ### Links
