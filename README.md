@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [view solution](https://github.com/Headbwoi/space-tourism-website)
-- Live Site URL: [live-site](https://your-live-site-url.com)
+- Live Site URL: [live-site](https://space-tourism-website-et-moi.netlify.app/)
 
 ## My process
 
