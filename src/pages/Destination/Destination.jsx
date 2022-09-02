@@ -43,8 +43,8 @@ const Destination = ({ destination }) => {
   return (
     <section className=" destination-home ">
       <Navbar />
+      <Header num="01" text="pick your destination" />
       <div className="dest-container">
-        <Header num="01" text="pick your destination" />
         {/* flex */}
         <div className="flex items-center justify-center flex-col lg:flex-row lg:space-x-[9.75rem]">
           {/* image */}
